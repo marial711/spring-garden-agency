@@ -1,7 +1,33 @@
 :root {
+  --primary-color: rgb(246, 171, 59);
+  --secondary-color: rgb(182, 231, 220);
+  --accent-color: rgb(255, 210, 210);
+  --contrast-color: rgb(122, 142, 87);
+
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 h1 {
   font-family: 'Noto Serif JP', serif;
+  color: var(--primary-color);
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+#contact-info {
+  padding: 100px;
+  color: var(--secondary-color);
+}
+
+#contactform {
+  padding: 75px;
+  color: var(--accent-color);
+}
+
+a {
+  color: var(--contrast-color);
 }
