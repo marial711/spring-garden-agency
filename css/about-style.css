@@ -1,0 +1,46 @@
+:root {
+  --accent-color: rgb(246, 171, 59);
+  --secondary-color: rgb(182, 231, 220);
+  --primary-color: rgb(255, 210, 210);
+  --contrast-color: rgb(122, 142, 87);
+  --pink-color: rgb(244, 101, 139);
+
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: rgb(250, 246, 217);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: var(--contrast-color);
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 0 2rem #000;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 2.6rem;
+}
+
+nav {
+  background-color: var(--accent-color);
+  padding: 0.6rem;
+}
+
+nav > a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  margin: 2rem;
+  color: white;
+}
+
+a:hover {
+  color: var(--accent-color);
+  font-size: 1.85rem;
+}
