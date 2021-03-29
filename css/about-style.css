@@ -1,7 +1,7 @@
 :root {
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-size: 17px;
-  background-color: #8f8f8f;
+  background-color: white;
 }
 
 body {
@@ -30,4 +30,10 @@ nav > a {
 
 a:hover {
   font-weight: bolder;
+}
+
+div {
+  background-color: rgba(179, 179, 179, 0.45);
+  padding: 1rem;
+  margin: 2rem;
 }

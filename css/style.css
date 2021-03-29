@@ -2,7 +2,7 @@
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-size: 17px;
   color: rgb(198, 86, 88);
-  background-color: #8f8f8f;
+  background-color: white;
 }
 
 body {
@@ -25,21 +25,12 @@ nav {
 nav > a {
   font-size: 1.8rem;
   text-decoration: none;
-  margin: 7rem;
+  margin: 6rem;
   color: white;
 }
 
 a:hover {
   font-weight: bolder;
-}
-
-div {
-  padding: 6rem;
-  background-image: url("../img/happy-woman.jpg");
-  background-color: transparent;
-  background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
 }
 
 p {
@@ -50,4 +41,13 @@ strong {
   font-size: 3rem;
   text-shadow: 1px 1.5px rgb(179, 179, 179);
   color: white;
+}
+
+#welcome {
+  padding: 6rem;
+  background-image: url("../img/happy-woman.jpg");
+  background-color: transparent;
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
 }
