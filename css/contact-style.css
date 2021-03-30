@@ -18,6 +18,9 @@ header {
 }
 
 nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   background: linear-gradient(180deg, rgba(254, 126, 128, 1) 0%, rgba(198, 86, 88, 1) 50%, rgba(91, 39, 40, 1) 100%);
   padding: 0.6rem;
 }
@@ -25,7 +28,6 @@ nav {
 nav > a {
   font-size: 1.8rem;
   text-decoration: none;
-  margin: 6rem;
   color: white;
 }
 
@@ -60,5 +62,16 @@ input {
 }
 
 #contact-info {
+  font-size: 1.25rem;
+  text-align: center;
   padding: 3rem;
+}
+
+#paynow {
+  background: linear-gradient(180deg, rgba(198, 86, 88, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(252, 247, 247, 1) 73%, rgba(198, 86, 88, 1) 100%);
+  border-color: rgb(162, 75, 76);
+  font-weight: bold;
+  padding: 0.35rem;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 1.7rem;
 }
