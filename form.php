@@ -34,5 +34,4 @@ if (mail($to, $emailSubject, $emailBody, $headers)) {
   echo "<nav><a href='./index.html'>Home</a><a href='./about.html'>About</a><a href='./contact.html'>Contact Us</a><button id='paynow' type='button' name='paynow'>Pay Now!</button></header>";
   echo "<main><  echo <script src='js/app.js'></script> Email sending failed...</main>";
   echo "<script src='js/app.js'></script>";}
-mail($to,$emailSubject,$moreinfo, $headers);
  ?>

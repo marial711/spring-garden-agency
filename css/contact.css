@@ -24,8 +24,13 @@ form > h2 {
 }
 
 input {
+  font-family: 'Barlow Semi Condensed', sans-serif;
   margin: 1.45rem;
   padding: 0.45rem;
+}
+
+textarea {
+  font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .required {
