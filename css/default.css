@@ -37,6 +37,7 @@ a:hover {
 }
 
 button {
+  cursor: pointer;
   background-color: rgb(198, 86, 88);
   color: white;
   padding: 0.5rem;
