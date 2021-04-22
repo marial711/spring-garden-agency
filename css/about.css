@@ -1,6 +1,5 @@
 :root {
   font-family: 'Barlow Semi Condensed', sans-serif;
-  font-size: 17px;
   background-color: white;
 }
 
@@ -33,13 +32,4 @@ a {
   background-color: rgba(179, 179, 179, 0.45);
   padding: 1.5rem;
   margin: 2rem;
-}
-
-#paynow {
-  background: linear-gradient(180deg, rgba(198, 86, 88, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(252, 247, 247, 1) 73%, rgba(198, 86, 88, 1) 100%);
-  border-color: rgb(162, 75, 76);
-  font-weight: bold;
-  padding: 0.35rem;
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-size: 1.7rem;
 }
