@@ -16,7 +16,7 @@ main {
 
 p {
   line-height: 2rem;
-  padding: 3rem;
+  padding: 0.55rem;
 }
 
 a {
@@ -31,6 +31,7 @@ a {
 
 #missionstatement {
   background-color: rgba(179, 179, 179, 0.45);
+  padding: 1.5rem;
   margin: 2rem;
 }
 
