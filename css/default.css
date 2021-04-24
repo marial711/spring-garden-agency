@@ -20,8 +20,8 @@ nav {
   background: linear-gradient(180deg, rgba(254, 126, 128, 1) 0%, rgba(198, 86, 88, 1) 50%, rgba(91, 39, 40, 1) 100%);
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   align-content: center;
+  justify-content: space-around;
   padding: 0.6rem;
 }
 
@@ -37,25 +37,35 @@ a:hover {
 }
 
 button:not(#paynow) {
-  cursor: pointer;
   background-color: rgb(198, 86, 88);
-  color: white;
-  padding: 0.5rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
   border-color: rgb(162, 75, 76);
+  cursor: pointer;
+  color: white;
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-size: 1.2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 0.5rem;
 }
 
 #paynow {
-  background: linear-gradient(180deg, rgba(198, 86, 88, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(252, 247, 247, 1) 73%, rgba(198, 86, 88, 1) 100%);
-  border-color: rgb(162, 75, 76);
-  font-weight: bold;
-  padding: 0.35rem;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 61%, rgba(255,255,255,1) 81%, rgba(220,151,153,1) 100%);
+  border-style: hidden;
+  cursor: pointer;
   font-family: 'Barlow Semi Condensed', sans-serif;
-  font-size: 1.7rem;
-  color: black;
+  font-size: 1.8rem;
+  padding-top: 0.22rem;
+  padding-bottom: 0.22rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+#paynow:hover {
+  font-weight: bolder;
+}
+
+#paynow:active {
+  background: linear-gradient(180deg, rgba(238,238,238,1) 61%, rgba(233,233,233,1) 81%, rgba(184,126,128,1) 100%);
 }
 
 .popup .overlay {
