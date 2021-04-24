@@ -18,23 +18,29 @@ form > h2 {
   text-align: center;
 }
 
+label {
+  font-size: 1.35rem;
+}
+
 input {
   font-family: 'Barlow Semi Condensed', sans-serif;
   margin: 1.45rem;
   padding: 0.45rem;
+  font-size: 1rem;
 }
 
 textarea {
   font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 1.15rem;
 }
 
 .required {
   color: red;
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 
 #contact-info {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   text-align: center;
   padding: 3rem;
 }

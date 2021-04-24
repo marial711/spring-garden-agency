@@ -16,6 +16,7 @@ main {
 p {
   line-height: 2rem;
   padding: 0.55rem;
+  font-size: 1.35rem;
 }
 
 a {
