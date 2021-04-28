@@ -9,7 +9,7 @@ $emailSubject = " REQUEST FROM: $fname $lname";
 
 $emailBody = "$fname $lname \n Email: $email \n Phone number: $number \n Zipcode: $zipcode \n Message: $moreinfo";
 
-$to = "marialeyva782@gmail.com";
+$to = "springgardenagency@gmail.com";
 $headers = "From: $email \r\n";
 $headers .= "Replay-To: $email \r\n";
 
