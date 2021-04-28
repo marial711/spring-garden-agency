@@ -1,3 +1,9 @@
+body {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:stretch;
+}
 p {
   font-size: 1.75rem;
 }
@@ -8,11 +14,70 @@ strong {
   text-shadow: 1px 1.5px rgb(179, 179, 179);
 }
 
-#welcome {
-  background-image: url("../img/happy-woman.jpg");
-  background-color: transparent;
-  background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
-  padding: 6rem;
+.main-slideshow {
+  max-width: 100%;
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+
+#next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -0.22rem;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.45s ease;
+  user-select: none;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+#previous {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -0.22rem;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.45s ease;
+  border-radius: 0 0.3rem 0.3rem 0;
+  user-select: none;
+}
+
+#previous:hover {
+  background-color: rgba(254, 126, 128, 1);
+}
+#next:hover {
+  background-color: rgba(254, 126, 128, 1);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .7}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .7}
+  to {opacity: 1}
+}
+
+img:not(#logo) {
+  height: 400px;
+  width: 100%;
 }

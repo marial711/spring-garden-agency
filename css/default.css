@@ -1,23 +1,31 @@
 :root {
-  background-color: white;
+  background-image: url("../img/background.png");
+  background-blend-mode: lighten;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: rgb(198, 86, 88);
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 body {
-  margin: 0;
+  background-color: white;
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 4rem;
+  margin-right: 4rem;
   overflow-x: hidden;
 }
 
 header {
   background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(234, 234, 234, 1) 35%, rgba(179, 179, 179, 1) 89%, rgba(143, 143, 143, 1) 100%);
-  box-shadow: 0 0 2rem #000;
   text-align: center;
 }
 
 nav {
   background: linear-gradient(180deg, rgba(254, 126, 128, 1) 0%, rgba(198, 86, 88, 1) 50%, rgba(91, 39, 40, 1) 100%);
+  border-radius: 3px 0 0 3px;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
