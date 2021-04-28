@@ -19,7 +19,7 @@ if (mail($to, $emailSubject, $emailBody, $headers)) {
   <link href='https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap' rel='stylesheet'>";
   echo "<style> p {text-align:center; padding: 1rem;}}</style>";
   echo "<header>";
-  echo "<img src='./img/agency-logo.png' alt='Spring Garden Agency and Home Care Services' id='logo'>";
+  echo "      <a href='./index.html'><img src=''./img/agency-logo.png' alt='Spring Garden Agency and Home Care Services' id='logo'></a>";
   echo "<nav><a href='./index.html'>Home</a><a href='./about.html'>About</a>
       <a href='./contact.html'>Contact Us</a><button id='paynow' type='button' name='paynow'>Pay Now!</button></header>";
   echo "<main><p>Thank you $fname! We will get back to you as soon as we can!</p>";
