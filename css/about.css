@@ -3,7 +3,10 @@
 }
 
 main {
+  background-color: white;
+  border-radius: 20px;
   padding: 3rem;
+  box-shadow: 0rem 1rem 1rem lightgrey;
 }
 
 p:not(#missionstatement) {
@@ -30,4 +33,5 @@ a {
   line-height: 2rem;
   font-size: 1.35rem;
   text-align: center;
+  border-radius: 20px;
 }

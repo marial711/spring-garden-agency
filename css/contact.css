@@ -6,6 +6,8 @@ main {
 
 form {
   padding: 3rem;
+  background-color: white;
+  border-radius: 35px;
 }
 
 form > h2 {
@@ -37,4 +39,5 @@ textarea {
   font-size: 1.35rem;
   text-align: center;
   padding: 3rem;
+  border-radius: 35px;
 }

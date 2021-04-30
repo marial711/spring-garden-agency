@@ -1,31 +1,34 @@
-:root {
-  background-image: url("../img/background.png");
-  background-blend-mode: lighten;
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
+:root{
+  background-color: #f4f4f2;
   color: rgb(198, 86, 88);
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-body {
+div {
   background-color: white;
+}
+
+body:not(header) {
   padding: 0;
-  margin-top: 0;
+  margin-top: 0.45rem;
   margin-bottom: 0;
-  margin-left: 4rem;
-  margin-right: 4rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
   overflow-x: hidden;
 }
 
 header {
-  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(234, 234, 234, 1) 35%, rgba(179, 179, 179, 1) 89%, rgba(143, 143, 143, 1) 100%);
+  background-color: white;
   text-align: center;
+  max-width: 100%;
+  margin-bottom: 2rem;
+  box-shadow: 0rem 1rem 1rem lightgrey;
+  border-radius: 20px;
 }
 
 nav {
+  border-radius: 5px;
   background: linear-gradient(180deg, rgba(254, 126, 128, 1) 0%, rgba(198, 86, 88, 1) 50%, rgba(91, 39, 40, 1) 100%);
-  border-radius: 3px 0 0 3px;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -38,6 +41,10 @@ nav > a {
   color: white;
   font-size: 1.8rem;
   text-decoration: none;
+}
+
+img:not(#logo) {
+  border-radius: 20px;
 }
 
 a:hover {
@@ -56,7 +63,14 @@ button:not(#paynow) {
   padding: 0.5rem;
 }
 
+#logo {
+  display: inline;
+  width: 400px;
+  height: 200px;
+}
+
 #paynow {
+  border-radius: 35px;
   background: linear-gradient(180deg, rgba(255,255,255,1) 61%, rgba(255,255,255,1) 81%, rgba(220,151,153,1) 100%);
   border-style: hidden;
   cursor: pointer;

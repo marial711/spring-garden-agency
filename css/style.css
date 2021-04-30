@@ -1,4 +1,5 @@
 body {
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,27 +12,54 @@ main {
 }
 
 p {
-  font-size: 1.75rem;
+  font-size: 1.45rem;
+  text-align: center;
 }
 
 strong {
-  color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   text-shadow: 1px 1.5px rgb(179, 179, 179);
 }
 
-footer {
-  height: 300px;
-  max-width: 100%;
+.slider-frame {
+  overflow: hidden;
+  height: 550px;
+  width: 1200px;
+  border-radius: 20px;
+  box-shadow: 0rem 1rem 1rem lightgrey;
 }
 
-.main-slideshow {
-  padding: 3rem;
-  max-width: 850px;
+@-webkit-keyframes slide_animation{
+  0% {left: 0px;}
+  10% {left: 0px;}
+  20% {left: 1200px;}
+  30% {left: 1200px;}
+  40% {left: 2400px;}
+  50% {left: 2400px;}
+  60% {left: 1200px;}
+  70% {left: 1200px;}
+  80% {left: 0px;}
+  90% {left: 0px;}
+  100% {left: 0px;}
 }
 
-.slide {
-  display: none;
+.slide-images {
+  width: 3600px;
+  height: 550px;
+  margin: 0 0 0 -2400px;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+}
+
+.img-container {
+  height: 550px;
+  width: 1200px;
+  position: relative;
+  float: left;
 }
 
 #arrows {
@@ -41,23 +69,7 @@ footer {
   font-size: 2.25rem;
 }
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-  from {opacity: .7}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .7}
-  to {opacity: 1}
-}
-
 img:not(#logo) {
-  height: 400px;
+  height: 550px;
   width: 100%;
 }
