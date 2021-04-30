@@ -112,6 +112,7 @@ button:not(#paynow) {
   padding: 2rem;
   z-index: 2;
   box-sizing: border-box;
+  border-radius: 20px;
 }
 
 .popup .close-btn {
