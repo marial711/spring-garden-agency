@@ -72,3 +72,24 @@ nav {
 
 }
 
+.about-section {
+    height: 75vh;
+    background-color:lighten(rgb(233, 127, 120), 25%);;
+    display: flex;
+    padding: 2rem;
+    line-height: 1.5rem;
+    h2{
+        color: white;
+        text-shadow: 1px 1px 1px $primary--color;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+}
