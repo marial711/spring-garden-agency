@@ -3,51 +3,97 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/css/reset.css">
+    <link rel="stylesheet" href="styles/css/main.css">
     <title>Spring Garden Agency</title>
   </head>
   <body>
+
     <header>
-      <!-- <a href="./index.html"><img src="./img/agency-logo.png" alt="Spring Garden Agency and Home Care Services" id="logo"></a> -->
       <nav>
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact Us</a>
-        <button id="paynow">Pay Now!</button>
+        <a href="#homepage"><img src="./img/agency-logo.png" alt="Back to Homepage Logo"></a>
+        <ul>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#contact-section">Contact Us</a></li>
+          <li><button id="paynow">Pay Now!</button></li>
+        </ul>
       </nav>
-      <div class="popup" id="popup-1">
-        <div class="overlay"></div>
-        <div class="content">
-          <div class="close-btn" id="close-btn">&times;</div>
-          <p>If you are inquiring to pay for Spring Garden Agency Home Care Services please contact Hortense Ross at (860) 461-1791</p>
+    </header>
+
+    <main>
+    <!-- HomePage Section -->
+    <div class="homepage" id="homepage">
+      <p>Creating an enviroment that can enhance the quality of life
+      and meet the needs of your loved one.</p>
+      <div id="slideshow">
+        <div class="slide-wrapper">
+          <div class="slide"> 
+          <img src="img/bikers.jpg" alt="Image of two elderly bikers">
+          </div>
+          <div class="slide">
+          <img src="img/blue-shirt.jpg" alt="Elder Old Man Profile">
+          </div>
+          <div class="slide">
+          <img src="img/boys.jpg" alt="Two Older Humans Sitting on a Bench">
+          </div>    
+          <div class="slide">
+          <img src="img/happy-woman.jpg" alt="A Happy Elderly Lady">
+          </div> 
         </div>
       </div>
-    </header>
-    <main>
-      <!-- <div class="slider-frame">
-        <p><strong>Creating an enviroment that can enhance the quality of life</strong><br> and meet the needs of your loved one.</p>
-        <div class="slide-images">
-          <div class="img-container">
-            <img src="img/bikers.jpg" alt="">
-          </div>
-          <div class="img-container">
-            <img src="img/blue-shirt.jpg" alt="">
-          </div>
-          <div class="img-container">
-            <img src="img/happy-woman.jpg" alt="">
-          </div>
-          <div class="img-container">
-            <img src="img/boys.jpg" alt="">
-          </div>
-        </div>
-      </div> -->
+    </div>
+      <!-- About Section -->
+      <div class="about-section"> 
+        <div id="about-section" class="wrapper">
+          <section> 
+          <h2>About Spring Garden Agency</h2>
+        <p>We are happy to see you here!  Since our foundings, we have always believed in offering your loved ones the quality care they deserve.
+          Here at Spring Garden Agency, we have been serving the needs of the Connecticut - with a proven track record in customer commitment.
+          Our services include hiring nurses, HHA's, CNA's, LPN's, companions, and more! Spring Garden Agency will help work with your needs.
+          Feel free to <a href="./contact.html">contact us</a> with any questions.</p>
+        </section>
+       
+          <section>
+          <h2>Spring Garden Mission Statement</h3>
+          <p>To be the community health care leader,
+            that fosters dignity, self sufficiency, and respect, by identifying defining and providing innovative,
+            quality oriented, comprehensive, cost effective home health care services which will enhance the quality
+            of life and meet the needs of the clients and the community we serve.</p>
+        </section>
+      </div>
+          <img src="./img/happy-man.jpg" alt="happy elderly man" width="350" height="500">
+      </div>
+      
+      <!-- Contact Section -->
+      <div class="contact-section" id="contact-section">
+        <section>
+          <strong>Spring Garden Agency</strong>
+          <p>541 Albany Avenue<br> Hartford, CT 06112<br> Phone: (860) 461-1791</p>
+          <i>Monday – Saturday: 10am – 7pm</i><br>
+          <i>Closed on <strong>Sundays</strong></i>
+        </section>
+        <!-- <img src="./img/hand-holding.jpg" alt="Hand holding" height="200" width="350"> -->
+        <form action="form.php" method="post" style="text-align: center">
+          <h2>Contact Spring Garden Agency today!</h2>
+          <label>Name <span class="required">*</span></label><input type="text" name="fname" placeholder="First Name" required>
+          <input type="text" name="lname" placeholder="Last Name"><br>
+          <br>
+          <label>Email <span class="required">*</span></label><input type="text" name="email" placeholder="email@example.com"><br>
+         <br>
+          <label>Phone Number <span class="required">*</span></label><input type="tel" name="phonenumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="111-222-3344"><br>
+          <br>
+          <label>Zip Code <span class="required">*</span></label><input type="text" pattern="[0-9]{5}" name="zipcode" placeholder="06117"><br>
+          <br>
+          <label>Tell Us How We Can Help? <span class="required">*</span></label><br><br><textarea name="moreinfo" rows="5" cols="50"></textarea><br><br>
+          <input type="reset" name="submit">
+          <input type="submit" name="submit">
+        </form>
+      </div>
     </main>
-    <footer>
 
-    </footer>
     <script src="js/app.js"></script>
   </body>
 </html>
