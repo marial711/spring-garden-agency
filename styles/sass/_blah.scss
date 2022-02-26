@@ -34,3 +34,20 @@ nav {
         }
     }  
 }
+.homepage {
+    margin-top: 3rem;
+    height: 90vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    p {
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: $primary--color;
+        padding: 1rem;
+    }
+    img {
+        height: 500px;
+        width: 870px;
+    }
