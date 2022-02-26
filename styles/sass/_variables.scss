@@ -5,6 +5,13 @@ $font-size: 16px;
 $header-font-size: 32px;
 $primary--color: rgb(233, 127, 120);
 
+@mixin basic-font-settings {
+    font: {
+        size: $font-size;
+        family: $default-font-family
+    }
+}
+
 @keyframes slide {
     20% {
         margin-left: 0px;
